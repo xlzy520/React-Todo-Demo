@@ -1,0 +1,198 @@
+@import "styles/Button.css";
+@import "styles/Input.css";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+}
+
+.dark{
+  background-color: #090821;
+  color: #fff;
+  .todo-list-item:hover{
+    background-color: rgba(39,41,84,.5) !important;
+  }
+}
+.light{
+  background-color: #fff;
+}
+.colorful{
+  background: linear-gradient(90deg,#1aecff,#ff1a62);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+.icon{
+  width: 32px;
+  height: 32px;
+}
+
+
+.login-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  .funky-input{
+    width: 232px;
+  }
+  .login-label{
+    width: 121px;
+  }
+}
+
+.login-title{
+  text-align: center;
+}
+
+.error{
+  margin: 0;
+  height: 15px;
+  line-height: 15px;
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+.submit{
+  text-align: center;
+  button{
+    margin-right: 45px;
+  }
+}
+
+.theme-radios{
+  margin-top: 10px;
+  margin-left: 20px;
+  input{
+    margin-right: 10px;
+  }
+}
+
+.nav{
+  margin-top: 20px;
+  .username, .theme-name{
+    color: #40a9ff;
+  }
+  .nav-btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button{
+      margin-left: 20px;
+    }
+  }
+
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.welcome{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-task{
+  margin-top: 20px;
+  .funky-btn{
+    margin-left: 20px;
+  }
+  .add-task-header{
+    padding: 10px 0;
+  }
+  .remove{
+    float: right;
+  }
+}
+.todo-list-container{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  border: 1px solid #e8e8e8;
+  padding: 20px;
+  .title{
+    flex: 1;
+    align-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 82px;
+  }
+  .todo-list-item{
+    cursor: pointer;
+    display: flex;
+    line-height: 40px;
+    align-items: center;
+    .todo-list-btns{
+      button{
+        margin-left: 10px;
+      }
+    }
+    .icon{
+      margin-right: 5px;
+      flex: 1;
+    }
+    &:hover{
+      background-color: #eee;
+    }
+
+    .todo-list-item-content{
+      flex: 1;
+      &.todo-complete{
+        text-decoration: line-through;
+      }
+    }
+  }
+}
+
+.change-name{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 1.5rem;
+  span{
+    margin-right: 15px;
+  }
+}
+
+.filter, .sort{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  select{
+    width: 232px;
+    height: 30px;
+    outline: none;
+    margin-left: 15px;
+  }
+  .sort-item{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+}
+
+.refresh{
+  margin-bottom: 20px;
+}
+
+.todo-list-header{
+  display: flex;
+  justify-content: space-between;
+}
